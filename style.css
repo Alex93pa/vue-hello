@@ -1,0 +1,6 @@
+.vueContainer {
+    background-image: url("https://www.hitsicily.com/_files/uploads/mondello-palermo-sicily-beach-2.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}

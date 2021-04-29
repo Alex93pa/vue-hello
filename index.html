@@ -5,16 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-    
+    <link rel="stylesheet" href="style.css">
     <title>vue</title>
 </head>
 <body>
     
-    <main id="vueContainer">
-        <input v-model="message" placeholder="write your message">
+    <main id="vueContainer" >
+        <section class="vueContainer" v-bind:style="bg_img">
+            <input v-model="message" placeholder="write your message">
+            
+            <h1 v-bind:class="text">{{ message }}</h1>
         
-        <h1 v-bind:class="text">{{ message }}</h1>
-    
+            <button @click="_img">Remove Image</button>
+
+        </section>
     </main>
 
 
